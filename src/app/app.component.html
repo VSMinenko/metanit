@@ -1,2 +1,2 @@
-<h2>Количество кликов: {{ clicks }}</h2>
-<app-child (onChanged)="onChanged($event)"></app-child>
+<app-child [(userName)]="name"></app-child>
+<div>Выбранное имя: {{ name }}</div>
