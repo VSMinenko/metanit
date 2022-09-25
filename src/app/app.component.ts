@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'metanit';
-  name = 'Петр';
+  name = 'Tom';
 }
