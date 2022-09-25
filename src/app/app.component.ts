@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'metanit';
-  name = 'Tom';
+  name: string = 'Tom';
+  age: number = 24;
 }

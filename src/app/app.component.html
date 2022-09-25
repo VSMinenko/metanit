@@ -1,3 +1,2 @@
-<app-child
-  ><h2>Добро пожаловать {{ name }}!</h2></app-child
->
+<app-child [userName]="name" [userAge]="age"></app-child>
+<input type="text" [(ngModel)]="name" />
