@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'metanit';
-  name: string = 'Tom';
-  age: number = 24;
+  clicks: number = 0;
+  onChanged(increased: any) {
+    increased == true ? this.clicks++ : this.clicks--;
+  }
 }
