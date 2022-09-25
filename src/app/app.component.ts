@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'metanit';
-  colspan = 2;
+  count: number = 0;
+  increase(): void {
+    this.count++;
+  }
 }
