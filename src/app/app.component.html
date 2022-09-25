@@ -1,3 +1,3 @@
-<div [class.isredbox]="isRed"></div>
-<div [class.isredbox]="!isRed"></div>
+<div [style.backgroundColor]="isRed ? 'red' : 'green'"></div>
+<div [style.background-color]="!isRed ? 'red' : 'green'"></div>
 <input type="checkbox" [(ngModel)]="isRed" />
