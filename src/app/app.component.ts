@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'metanit';
   items = ['Tom', 'Bob', 'Sam', 'Bill'];
+
   count: number = 5;
+
+  condition: boolean = true;
+  toggle() {
+    this.condition = !this.condition;
+  }
 }

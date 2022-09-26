@@ -7,3 +7,7 @@
   <ng-template ngSwitchCase="2">{{ count * 100 }}</ng-template>
   <ng-template ngSwitchDefault>{{ count * 1000 }}</ng-template>
 </div>
+
+<p *while="condition">Первый параграф</p>
+<p *while="!condition">Второй параграф</p>
+<button (click)="toggle()">Toggle</button>
