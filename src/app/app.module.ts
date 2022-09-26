@@ -8,9 +8,17 @@ import { ChildComponent } from './components/child/child.component';
 import { BoldDirective } from './bold.directive';
 import { WhileDirective } from './while.directive';
 import { ServicesComponent } from './components/services/services.component';
+import { DataComponent } from './components/data/data.component';
 
 @NgModule({
-  declarations: [AppComponent, ChildComponent, BoldDirective, WhileDirective, ServicesComponent],
+  declarations: [
+    AppComponent,
+    ChildComponent,
+    BoldDirective,
+    WhileDirective,
+    ServicesComponent,
+    DataComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

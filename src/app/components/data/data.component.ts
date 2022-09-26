@@ -3,12 +3,12 @@ import { DataService } from 'src/app/data.service';
 import { LogService } from 'src/app/log.service';
 
 @Component({
-  selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.css'],
+  selector: 'app-data',
+  templateUrl: './data.component.html',
+  styleUrls: ['./data.component.css'],
   providers: [DataService, LogService],
 })
-export class ServicesComponent implements OnInit {
+export class DataComponent implements OnInit {
   newItem: string = '';
   items: string[] = [];
   constructor(private dataService: DataService) {}
