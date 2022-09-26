@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'metanit';
-  visibility: boolean = true;
-  // переключаем переменную
+  condition: boolean = true;
+
   toggle() {
-    this.visibility = !this.visibility;
+    this.condition = !this.condition;
   }
 }

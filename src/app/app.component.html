@@ -1,10 +1,5 @@
-<div [ngClass]="{ invisible: visibility }">
-  <h1>Hello Angular 14</h1>
-  <p>Angular 14 представляет модульную архитектуру приложения</p>
-</div>
+<p *ngIf="condition; else unset">Привет мир</p>
+<ng-template #unset>
+  <p>Пока мир</p>
+</ng-template>
 <button (click)="toggle()">Toggle</button>
-
-<div>
-  <p bold selectedSize="28px" [defaultSize]="'14px'">Hello Angular</p>
-  <p>Angular представляет модульную архитектуру приложения</p>
-</div>
