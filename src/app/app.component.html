@@ -1,6 +1,5 @@
-<div [ngStyle]="{ 'font-size': '13px', 'font-family': 'Verdana' }">
+<div [ngClass]="{ invisible: visibility }">
   <h1>Hello Angular 14</h1>
-  <p [ngStyle]="{ 'font-size': '14px', 'font-family': 'Segoe Print' }">
-    Angular 14 представляет модульную архитектуру приложения
-  </p>
+  <p>Angular 14 представляет модульную архитектуру приложения</p>
 </div>
+<button (click)="toggle()">Toggle</button>
