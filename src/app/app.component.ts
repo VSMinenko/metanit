@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'metanit';
   items = ['Tom', 'Bob', 'Sam', 'Bill'];
+  count: number = 5;
 }
