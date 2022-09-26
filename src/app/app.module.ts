@@ -7,9 +7,10 @@ import { FormsModule } from '@angular/forms';
 import { ChildComponent } from './components/child/child.component';
 import { BoldDirective } from './bold.directive';
 import { WhileDirective } from './while.directive';
+import { ServicesComponent } from './components/services/services.component';
 
 @NgModule({
-  declarations: [AppComponent, ChildComponent, BoldDirective, WhileDirective],
+  declarations: [AppComponent, ChildComponent, BoldDirective, WhileDirective, ServicesComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
