@@ -9,6 +9,7 @@ import { BoldDirective } from './bold.directive';
 import { WhileDirective } from './while.directive';
 import { ServicesComponent } from './components/services/services.component';
 import { DataComponent } from './components/data/data.component';
+import { ModuleComponent } from './components/module/module.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { DataComponent } from './components/data/data.component';
     WhileDirective,
     ServicesComponent,
     DataComponent,
+    ModuleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
