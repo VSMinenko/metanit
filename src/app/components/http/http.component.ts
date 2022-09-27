@@ -1,20 +1,22 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { User } from '../../user';
+import { HttpService } from 'src/app/http.service';
 
 @Component({
   selector: 'app-http',
   templateUrl: './http.component.html',
   styleUrls: ['./http.component.css'],
+  providers: [HttpService],
 })
 export class HttpComponent implements OnInit {
-  user: User | undefined;
+  users: User[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private httpService: HttpService) {}
 
   ngOnInit() {
-    this.http.get('assets/user.json').subscribe({
-      next: (data: any) => (this.user = new User(data.name, data.age)),
-    });
+    this.httpService
+      .getData()
+      .subscribe({ next: (data: any) => (this.users = data['userList']) });
   }
 }
