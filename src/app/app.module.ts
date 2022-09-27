@@ -11,7 +11,8 @@ import { ServicesComponent } from './components/services/services.component';
 import { DataComponent } from './components/data/data.component';
 import { ModuleComponent } from './components/module/module.component';
 import { NgformComponent } from './components/ngform/ngform.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { HttpComponent } from './components/http/http.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,8 +23,9 @@ import { NgformComponent } from './components/ngform/ngform.component';
     DataComponent,
     ModuleComponent,
     NgformComponent,
+    HttpComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
