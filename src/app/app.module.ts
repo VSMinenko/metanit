@@ -10,6 +10,7 @@ import { WhileDirective } from './while.directive';
 import { ServicesComponent } from './components/services/services.component';
 import { DataComponent } from './components/data/data.component';
 import { ModuleComponent } from './components/module/module.component';
+import { NgformComponent } from './components/ngform/ngform.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ModuleComponent } from './components/module/module.component';
     ServicesComponent,
     DataComponent,
     ModuleComponent,
+    NgformComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
