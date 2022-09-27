@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgModel } from '@angular/forms';
 
 export class Phone {
   constructor(
@@ -18,7 +19,7 @@ export class ModuleComponent implements OnInit {
   price: number = 0;
   company: string = '';
 
-  phones: Phone[] = [];
+  phone: Phone = new Phone('', 0, '');
   companies: string[] = [
     'Apple',
     'Huawei',
@@ -29,8 +30,10 @@ export class ModuleComponent implements OnInit {
     'Alcatel',
   ];
 
-  addPhone() {
-    this.phones.push(new Phone(this.title, this.price, this.company));
+  addPhone(title: NgModel, price: NgModel, comp: NgModel) {
+    console.log(title);
+    console.log(price);
+    console.log(comp);
   }
   constructor() {}
 
