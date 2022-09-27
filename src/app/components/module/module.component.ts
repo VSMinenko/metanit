@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { NgModel } from '@angular/forms';
 
-export class Phone {
+export class User {
   constructor(
-    public title: string,
-    public price: number,
-    public company: string
+    public name: string,
+    public email: string,
+    public phone: string
   ) {}
 }
 
@@ -14,28 +14,13 @@ export class Phone {
   templateUrl: './module.component.html',
   styleUrls: ['./module.component.css'],
 })
-export class ModuleComponent implements OnInit {
+export class ModuleComponent {
   title: string = '';
   price: number = 0;
   company: string = '';
 
-  phone: Phone = new Phone('', 0, '');
-  companies: string[] = [
-    'Apple',
-    'Huawei',
-    'Xiaomi',
-    'Samsung',
-    'LG',
-    'Motorola',
-    'Alcatel',
-  ];
-
-  addPhone(title: NgModel, price: NgModel, comp: NgModel) {
-    console.log(title);
-    console.log(price);
-    console.log(comp);
+  user: User = new User('', '', '');
+  addUser() {
+    console.log(this.user);
   }
-  constructor() {}
-
-  ngOnInit(): void {}
 }
